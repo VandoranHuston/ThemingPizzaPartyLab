@@ -35,6 +35,8 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize(),
                     topBar = {TopAppBar(
                         title = {Text("Pizza Party")},
+                        //actions switch will appear in the top bar on the top right. This toggle will
+                        //allow you to switch between dark and light mode.
                         actions = {Switch(
                             checked = isDarkTheme,
                             onCheckedChange = { isDarkTheme = it }
