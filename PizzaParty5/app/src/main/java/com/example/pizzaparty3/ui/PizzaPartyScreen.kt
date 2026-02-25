@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
@@ -71,7 +72,7 @@ fun PizzaPartyScreen(pvm: PizzaPartyViewModel, modifier: Modifier = Modifier) {
             Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()
             pvm.calculateNumPizzas()
         }){
-            Text(text = "Calculate")
+            Text(text = "Calculate", style = MaterialTheme.typography.labelLarge)
         }
 
 
