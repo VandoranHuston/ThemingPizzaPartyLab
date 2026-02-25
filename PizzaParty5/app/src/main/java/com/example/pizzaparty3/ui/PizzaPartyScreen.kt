@@ -4,6 +4,8 @@ import android.util.Log
 import android.widget.Toast
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.RadioButton
@@ -15,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.example.pizzaparty3.ui.theme.PizzaParty3Theme
 
 @Composable
@@ -36,11 +39,15 @@ fun PizzaPartyScreen(pvm: PizzaPartyViewModel, modifier: Modifier = Modifier) {
 
 //    var numPeople by remember { mutableStateOf("") }
 
-    Column {
-        Text(
-            text = "Pizza Party",
-            modifier = modifier
-        )
+    Column (
+        modifier = modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    ){
+        //Text(
+        //    text = "Pizza Party",
+        //    modifier = modifier
+        //)
 
 //    var numPeople by remember { mutableStateOf("") }
 //    var numPeople = ""
